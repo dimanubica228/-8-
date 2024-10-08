@@ -1,0 +1,10 @@
+fun main() {
+    fun differenceOfMaxMin(numbers: List<Int>): Int {
+        if (numbers.isEmpty()) {
+            throw IllegalArgumentException("Список не может быть пустым")
+        }
+        val max = numbers.maxOrNull() ?: throw IllegalArgumentException("Список должен содержать хотя бы одно число")
+        val min = numbers.minOrNull() ?: throw IllegalArgumentException("Список должен содержать хотя бы одно число")
+        return max - min
+    }
+}
