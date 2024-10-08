@@ -1,0 +1,10 @@
+fun reverseString(str: String): String {
+    return str.reversed()
+}
+
+fun main() {
+    val inputString = "Привет, мир!"
+    val reversedString = reverseString(inputString)
+    println("Исходная строка: $inputString")
+    println("Обратная строка: $reversedString")
+}
