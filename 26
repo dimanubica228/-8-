@@ -1,0 +1,7 @@
+fun <T> lastElement(array: Array<T>): T? {
+  if (array.isEmpty()) {
+    return null // Возвращаем null, если массив пустой
+  } else {
+    return array[array.size - 1] // Возвращаем последний элемент
+  }
+}
