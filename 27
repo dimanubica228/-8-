@@ -1,0 +1,16 @@
+fun containsElement(array: Array<Any>, element: Any): Boolean {
+    for (item in array) {
+        if (item == element) {
+            return true
+        }
+    }
+    return false
+}
+
+fun main() {
+    val myArray = arrayOf("apple", "banana", "cherry")
+    val elementToFind = "banana"
+
+    val isElementPresent = containsElement(myArray, elementToFind)
+    println("Элемент '$elementToFind' присутствует в массиве: $isElementPresent")
+}
