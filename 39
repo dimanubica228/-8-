@@ -1,0 +1,9 @@
+fun reverseArray(array: IntArray): IntArray {
+    val reversedArray = array.copyOf() // Создаем копию массива, чтобы не изменять исходный
+    for (i in 0 until reversedArray.size / 2) {
+        val temp = reversedArray[i]
+        reversedArray[i] = reversedArray[reversedArray.size - i - 1]
+        reversedArray[reversedArray.size - i - 1] = temp
+    }
+    return reversedArray
+}
