@@ -1,0 +1,6 @@
+fun main() {
+    val text1 = "А роза упала на лапу Азора"
+    val text2 = "Hello, world!"
+    println(isPalindrome(text1)) // Вывод: true
+    println(isPalindrome(text2)) // Вывод: false
+}
