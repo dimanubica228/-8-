@@ -1,0 +1,5 @@
+fun main() {
+    val text = "Hello, world!"
+    val characterCount = countCharacters(text)
+    println(characterCount) // Вывод: 13
+}
