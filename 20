@@ -1,0 +1,13 @@
+fun findMax(numbers: IntArray): Int {
+  if (numbers.isEmpty()) {
+    throw IllegalArgumentException("Массив пуст.")
+  }
+
+  var max = numbers[0]
+  for (i in 1 until numbers.size) {
+    if (numbers[i] > max) {
+      max = numbers[i]
+    }
+  }
+  return max
+}
