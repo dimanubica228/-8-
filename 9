@@ -1,0 +1,15 @@
+fun main() {
+    fun isPowerOfK(n: Int, k: Int): Boolean {
+        if (n <= 0 || k <= 1) return false
+        var temp = 1
+        for (i in 1..n) {
+            temp = k
+            if (temp == n) {
+                return true
+            } else if (temp > n) {
+                return false
+            }
+        }
+        return false
+    }
+}
