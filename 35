@@ -1,0 +1,6 @@
+fun sumOfNaturalNumbers(n: Int): Int {
+    if (n < 0) {
+        throw IllegalArgumentException("N must be a non-negative integer")
+    }
+    return (n  (n + 1)) / 2
+}
