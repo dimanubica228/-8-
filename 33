@@ -1,0 +1,7 @@
+fun findElementByIndex(array: Array<Any>, index: Int): Any? {
+  if (index in 0 until array.size) {
+    return array[index]
+  } else {
+    return null // Или выбросить исключение, если индекс недопустим
+  }
+}
