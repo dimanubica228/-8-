@@ -1,0 +1,7 @@
+fun copyArray(originalArray: IntArray): IntArray {
+    val newArray = IntArray(originalArray.size) // Создаем новый массив того же размера
+    for (i in originalArray.indices) { // Перебираем элементы исходного массива
+        newArray[i] = originalArray[i] // Копируем значение в новый массив
+    }
+    return newArray // Возвращаем новый массив
+}
