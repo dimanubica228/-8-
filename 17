@@ -1,0 +1,29 @@
+fun factorial(n: Int): Long {
+    if (n < 0) {
+        throw IllegalArgumentException("Факториал не определен для отрицательных чисел")
+    } else if (n == 0) {
+        return 1
+    } else {
+        var result: Long = 1
+        for (i in 1..n) {
+            result = i
+        }
+        return result
+    }
+}
+
+fun main() {
+    println("Введите число:")
+    val number = readLine()?.toIntOrNull() ?: 0 // Считываем число с консоли
+
+    if (number != null) {
+        try {
+            val factorial = factorial(number)
+            println("Факториал $number равен $factorial")
+        } catch (e: IllegalArgumentException) {
+            println(e.message)
+        }
+    } else {
+        println("Некорректный ввод")
+    }
+}
