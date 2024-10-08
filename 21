@@ -1,0 +1,5 @@
+fun main() {
+    val unsortedArray = intArrayOf(5, 2, 8, 1, 9)
+    val sortedArray = sortArrayAscending(unsortedArray)
+    println(sortedArray.contentToString()) // Вывод: [1, 2, 5, 8, 9]
+}
