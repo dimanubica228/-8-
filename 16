@@ -1,0 +1,4 @@
+fun main() {
+    println(isEven(4)) // Вывод: true
+    println(isEven(5)) // Вывод: false
+}
