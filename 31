@@ -1,0 +1,5 @@
+fun main() {
+  val celsius = 25.0
+  val fahrenheit = celsiusToFahrenheit(celsius)
+  println("$celsius градусов Цельсия равно $fahrenheit градусов Фаренгейта.")
+}
