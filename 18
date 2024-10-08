@@ -1,0 +1,6 @@
+fun main() {
+    println(isPrime(1)) // false
+    println(isPrime(2)) // true
+    println(isPrime(7)) // true
+    println(isPrime(10)) // false
+}
