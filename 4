@@ -1,0 +1,14 @@
+ fun main() {
+
+    val prob = 0.5 // вероятность выигрыша
+    val prize = 100.0 // размер приза
+    val pay = 20.0 // цена участия
+
+    val isWorthIt = isWorthIt(prob, prize, pay)
+
+    if (isWorthIt) {
+        println("Стоит попробовать!")
+    } else {
+        println("Не стоит тратить деньги.")
+    }
+}
