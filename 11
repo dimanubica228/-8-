@@ -1,0 +1,36 @@
+import java.math.BigDecimal
+
+fun evaluateEquation(equation: String): BigDecimal {
+    // Заменяем пробелы для удобства обработки
+    val cleanedEquation = equation.replace(" ", "")
+
+    // Разбиваем уравнение на операторы и числа
+    val parts = cleanedEquation.split(Regex("[+\\-/]"))
+
+    // Проверяем, есть ли в уравнении операторы
+    if (parts.size == 1) {
+        return BigDecimal(parts[0])
+    }
+
+    // Проходим по частям уравнения, выполняя операции по порядку
+    var result = BigDecimal(parts[0])
+    for (i in 1 until parts.size) {
+        val operator = cleanedEquation[parts[i - 1].length + i - 1]
+        val operand = BigDecimal(parts[i])
+        when (operator) {
+            '+' -> result += operand
+            '-' -> result -= operand
+            '' -> result = operand
+            '/' -> result /= operand
+            else -> throw IllegalArgumentException("Неизвестный оператор: $operator")
+        }
+    }
+
+    return result
+}
+
+fun main() {
+    val equation = "1 + 1"
+    val result = evaluateEquation(equation)
+    println("$equation = $result")
+}
