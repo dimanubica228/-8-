@@ -1,0 +1,9 @@
+fun removeSpaces(str: String): String {
+  return str.replace(" ", "")
+}
+
+fun main() {
+  val str = "Это строка с пробелами"
+  val result = removeSpaces(str)
+  println(result) // Вывод: Этострокаспробелами
+}
